@@ -1,0 +1,13 @@
+{
+  "name": "estadista-de-voley",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "PWA de estadisticas para voley amateur.",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "node --test tests/"
+  },
+  "license": "MIT",
+  "engines": { "node": ">=20" }
+}

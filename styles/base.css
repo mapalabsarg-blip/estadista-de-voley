@@ -1,0 +1,13 @@
+*,*::before,*::after{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+:root{
+  --color-bg:#0f172a;--color-surface:#1e293b;--color-surface-2:#334155;
+  --color-text:#f1f5f9;--color-text-dim:#94a3b8;--color-accent:#38bdf8;
+  --color-plus2:#16a34a;--color-plus1:#84cc16;--color-zero:#6b7280;
+  --color-minus1:#f59e0b;--color-error:#dc2626;--color-warn:#f59e0b;
+  --radius:14px;--radius-sm:10px;--touch-min:48px;--touch-ideal:64px;
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+html,body{background:var(--color-bg);color:var(--color-text);font-family:var(--font);-webkit-font-smoothing:antialiased;overscroll-behavior:none;}
+button{font-family:inherit;color:inherit;border:none;background:none;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;user-select:none;}
+button:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px;}

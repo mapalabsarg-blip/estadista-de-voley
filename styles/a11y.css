@@ -1,0 +1,13 @@
+@media (prefers-reduced-motion: reduce) {
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important;}
+}
+.sr-only{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+:focus-visible{outline:3px solid var(--color-accent);outline-offset:2px;border-radius:4px;}
+[role="dialog"]{outline:none;}
+button:disabled{pointer-events:none;}
+@media (prefers-contrast: more){:root{--color-text-dim:#cbd5e1;}}
+.rotate-hint{position:fixed;inset:auto 12px calc(12px + env(safe-area-inset-bottom)) 12px;display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;background:var(--color-warn);color:#0f172a;font-size:13px;font-weight:700;box-shadow:0 14px 30px rgba(0,0,0,.45);transform:translateY(140%);transition:transform .24s ease;z-index:1500;pointer-events:none;}
+.rotate-hint--visible{transform:translateY(0);}
+.rotate-hint__icon{font-size:22px;line-height:1;}
+.rotate-hint__text{flex:1 1 auto;line-height:1.25;}
+@media (orientation: landscape){.rotate-hint{display:none;}}

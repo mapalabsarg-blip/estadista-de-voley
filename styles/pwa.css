@@ -1,0 +1,7 @@
+.install-banner{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));background:var(--color-surface-2);border-radius:14px;padding:12px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px;transform:translateY(140%);transition:transform .24s ease;box-shadow:0 18px 40px rgba(0,0,0,.55);z-index:2000;}
+.install-banner--visible{transform:translateY(0);}
+.install-banner__text{font-size:13px;font-weight:600;color:var(--color-text);flex:1 1 auto;}
+.install-banner__actions{display:flex;align-items:center;gap:6px;}
+.install-banner__btn{padding:0 12px;height:36px;border-radius:10px;font-size:13px;font-weight:700;display:inline-flex;align-items:center;}
+.install-banner__btn--primary{background:var(--color-accent);color:#0f172a;}
+.install-banner__btn--ghost{background:transparent;color:var(--color-text-dim);}

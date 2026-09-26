@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="description" content="Estadisticas para voley amateur, en vivo." />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="./icons/icon.svg" />
+  <link rel="apple-touch-icon" href="./icons/icon.svg" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Estadista" />
+  <title>El Estadista del Voley</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/a11y.css" />
+  <link rel="stylesheet" href="styles/stats-module.css" />
+  <link rel="stylesheet" href="styles/stats-view.css" />
+  <link rel="stylesheet" href="styles/matches-view.css" />
+  <link rel="stylesheet" href="styles/pwa.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="top-bar__row top-bar__row--meta">
+      <div class="top-bar__info">
+        <span id="set-info" class="top-bar__set">Set 1</span>
+        <span id="sets-won" class="top-bar__sets-won">Sets 0-0</span>
+      </div>
+      <div class="top-bar__actions">
+        <button id="matches-btn" class="icon-btn" aria-label="Partidos">📋</button>
+        <button id="stats-btn" class="icon-btn" aria-label="Estadisticas">📊</button>
+        <button id="undo-btn" class="icon-btn" aria-label="Deshacer">↶</button>
+        <button id="new-set-btn" class="icon-btn" aria-label="Nuevo set">＋</button>
+      </div>
+    </div>
+    <div class="top-bar__row top-bar__row--score">
+      <div class="score-side score-side--local">
+        <button id="score-local-minus" class="score-step" aria-label="Restar local">−</button>
+        <span id="score-local" class="score-number">0</span>
+        <button id="score-local-plus" class="score-step" aria-label="Sumar local">+</button>
+      </div>
+      <span class="score-sep">–</span>
+      <div class="score-side score-side--visitante">
+        <button id="score-visitante-minus" class="score-step" aria-label="Restar visitante">−</button>
+        <span id="score-visitante" class="score-number">0</span>
+        <button id="score-visitante-plus" class="score-step" aria-label="Sumar visitante">+</button>
+      </div>
+    </div>
+  </header>
+  <section class="players-section" aria-label="Jugadores">
+    <div id="players-list" class="players"></div>
+  </section>
+  <section id="bottom-panel" class="panel" aria-label="Panel"></section>
+  <div id="stats-container" hidden></div>
+  <div id="matches-container" hidden></div>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
